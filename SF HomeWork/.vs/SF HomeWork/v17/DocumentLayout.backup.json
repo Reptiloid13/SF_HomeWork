@@ -194,8 +194,7 @@
               "RelativeToolTip": "SF HomeWork\\Folder\\F3\\F3.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-07T08:02:40.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:02:40.96Z"
             },
             {
               "$type": "Document",
@@ -207,8 +206,7 @@
               "RelativeToolTip": "SF HomeWork\\Folder\\F2\\F2.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-07T08:02:19.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:02:19.091Z"
             },
             {
               "$type": "Document",
@@ -220,8 +218,7 @@
               "RelativeToolTip": "SF HomeWork\\Folder\\F1\\F1.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-07T08:02:03.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:02:03.931Z"
             },
             {
               "$type": "Document",
@@ -233,21 +230,19 @@
               "RelativeToolTip": "SF HomeWork\\Folder\\Class1.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-12-07T08:01:33.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:01:33.684Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SF HomeWork",
+              "Title": "SF HomeWork.csproj",
               "DocumentMoniker": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\SF HomeWork.csproj",
               "RelativeDocumentMoniker": "SF HomeWork\\SF HomeWork.csproj",
               "ToolTip": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\SF HomeWork.csproj",
               "RelativeToolTip": "SF HomeWork\\SF HomeWork.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-07T08:00:14.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:00:14.61Z"
             },
             {
               "$type": "Document",
@@ -257,7 +252,7 @@
               "RelativeDocumentMoniker": "SF HomeWork\\Program.cs",
               "ToolTip": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\Program.cs",
               "RelativeToolTip": "SF HomeWork\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T08:00:06.026Z",
               "EditorCaption": ""
