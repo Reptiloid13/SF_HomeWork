@@ -18,7 +18,10 @@
                 Console.WriteLine(dir);
                 Console.WriteLine();
 
-
+                //if(Directory.GetLastWriteTime(dir)< DateTime.Now.AddSeconds(-1))
+                //   {
+                //       Directory.Delete(dir, true); 
+                //   }
             }
 
         }
