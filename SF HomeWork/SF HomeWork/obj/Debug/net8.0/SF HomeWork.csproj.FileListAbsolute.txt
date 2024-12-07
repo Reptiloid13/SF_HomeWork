@@ -1,0 +1,15 @@
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\SF HomeWork.exe
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\SF HomeWork.deps.json
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\SF HomeWork.runtimeconfig.json
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\SF HomeWork.dll
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\SF HomeWork.pdb
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.AssemblyInfoInputs.cache
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.AssemblyInfo.cs
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.csproj.CoreCompileInputs.cache
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.dll
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\refint\SF HomeWork.dll
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.pdb
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.genruntimeconfig.cache
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\ref\SF HomeWork.dll
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\Program.cs
