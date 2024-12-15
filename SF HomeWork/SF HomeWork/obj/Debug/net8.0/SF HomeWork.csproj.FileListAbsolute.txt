@@ -13,3 +13,4 @@ C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF Hom
 C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.genruntimeconfig.cache
 C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\ref\SF HomeWork.dll
 C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\bin\Debug\net8.0\Program.cs
+C:\Users\фвьшт\source\repos\SF HomeWork\SF HomeWork\obj\Debug\net8.0\SF HomeWork.sourcelink.json

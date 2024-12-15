@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|solutionrelative:sf homework\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|c:\\users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\sf homework\\sf homework\\folder\\f2\\f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|solutionrelative:sf homework\\folder\\f2\\f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|c:\\users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\sf homework\\sf homework\\sf homework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|solutionrelative:sf homework\\sf homework.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|c:\\users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\sf homework\\sf homework\\folder\\f3\\f3.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|solutionrelative:sf homework\\folder\\f3\\f3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|c:\\users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\sf homework\\sf homework\\folder\\f2\\f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|solutionrelative:sf homework\\folder\\f2\\f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D73142DC-4627-4CB8-9AEC-E322F4DEB51A}|SF HomeWork\\SF HomeWork.csproj|c:\\users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\sf homework\\sf homework\\folder\\f1\\f1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -186,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "F3.txt",
               "DocumentMoniker": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\Folder\\F3\\F3.txt",
               "RelativeDocumentMoniker": "SF HomeWork\\Folder\\F3\\F3.txt",
@@ -198,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "F2.txt",
               "DocumentMoniker": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\Folder\\F2\\F2.txt",
               "RelativeDocumentMoniker": "SF HomeWork\\Folder\\F2\\F2.txt",
@@ -234,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SF HomeWork.csproj",
               "DocumentMoniker": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\SF HomeWork.csproj",
               "RelativeDocumentMoniker": "SF HomeWork\\SF HomeWork.csproj",
@@ -252,7 +252,7 @@
               "RelativeDocumentMoniker": "SF HomeWork\\Program.cs",
               "ToolTip": "C:\\Users\\\u0444\u0432\u044C\u0448\u0442\\source\\repos\\SF HomeWork\\SF HomeWork\\Program.cs",
               "RelativeToolTip": "SF HomeWork\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T08:00:06.026Z",
               "EditorCaption": ""
