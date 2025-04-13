@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -10,25 +11,17 @@ namespace DeliveryHW_03
     public abstract class Person
     {
         public string FirstName;
-        public string LastName;
-
-        private string _email { get; set; }
-        public string Email
+        public required string LastName;
+        public string FullName
         {
-            get { return _email; }
-            set
+            get
             {
-                if (!value.Contains('@'))
-                {
-                    Console.WriteLine("Не верный формат");
-
-                }
-                else
-                {
-                    _email = value;
-                }
+                return $"{FirstName},  {LastName}";
             }
+
         }
+
+
         public string _phoneNumber { get; set; }
         public string PhoneNumber
         {
@@ -46,21 +39,46 @@ namespace DeliveryHW_03
             }
         }
 
-
+        public Address Address { get; set; }
         private Guid _id = Guid.NewGuid();
         public Guid id => _id;
 
 
-        public Person(string firstName, string lastName, string email, string phoneNumber)
-        {
+        //public Person(string firstName, string lastName, string email, string phoneNumber)
+        //{
 
 
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            PhoneNumber = phoneNumber;
+        //    FirstName = firstName;
+        //    LastName = lastName;
+        //    Email = email;
+        //    PhoneNumber = phoneNumber;
 
-        }
+        //}
 
     }
+
+    public class Customer : Person
+    {
+        private string _email;
+        public string Email
+        {
+            get { return _email; }
+            set
+            {
+                if (!value.Contains('@'))
+                {
+                    throw new ArgumentException("Не верный формат");
+                }
+                _email = value;
+            }
+        }
+        public Address Address { get; set; }     // Почему тут ошибка 
+
+    }
+
+    public class Courier : Person
+    {
+
+    }
+
 }
