@@ -30,7 +30,7 @@ namespace DeliveryHW_03
         }
     }
 
-    public class ShopDelivery : Delivery
+    public class ShopDelivery : Delivery(string address)
     {
 
     }

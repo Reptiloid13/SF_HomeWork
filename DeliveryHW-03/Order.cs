@@ -10,17 +10,14 @@ namespace DeliveryHW_03
     {
         public TDelivery Delivery;
 
-        private int number;
-        public int Number
-        {
-            get { return number; }
-        }
+
 
         private Guid _id = Guid.NewGuid();
         public Guid id => _id;
 
+        public Dictionary<Product, int> Products;
 
-        public string Description; // Нужно ли это поле? 
+
 
         public void DisplayAddress()
         {

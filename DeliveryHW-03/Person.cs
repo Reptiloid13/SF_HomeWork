@@ -44,16 +44,7 @@ namespace DeliveryHW_03
         public Guid id => _id;
 
 
-        //public Person(string firstName, string lastName, string email, string phoneNumber)
-        //{
 
-
-        //    FirstName = firstName;
-        //    LastName = lastName;
-        //    Email = email;
-        //    PhoneNumber = phoneNumber;
-
-        //}
 
     }
 
@@ -72,7 +63,8 @@ namespace DeliveryHW_03
                 _email = value;
             }
         }
-        public Address Address { get; set; }     // Почему тут ошибка 
+        public Address Address { get; set; }
+
 
     }
 
