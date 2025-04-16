@@ -32,13 +32,13 @@
             };
 
 
-            Product apple = new Product()
+            Product product1 = new Product()
             {
                 Name = "Apple",
                 Price = 5
 
             };
-            Product pineapple = new Product
+            Product product2 = new Product
             {
                 Name = "PineApple",
                 Price = 15
@@ -53,15 +53,15 @@
             };
 
             Order<HomeDelivery, Customer> order = new Order<HomeDelivery, Customer>(homeDelivery);
-            order.AddProduct(apple, 7);
-            order.AddProduct(pineapple, 25);
+            order.AddProduct(product1, 7);
+            order.AddProduct(product2, 25);
 
             order.ShowProducts();
             order.DisplayAddress();
 
-            Console.WriteLine($" {customer.id} / Клиент - {customer.FullName}, {customer.PhoneNumber}, {customer.Address} ");
+            Console.WriteLine($" ID - {customer.id} / Клиент - {customer.FullName}, {customer.PhoneNumber}, {customer.Address} ");
 
-            Console.WriteLine($"{courier.id} / Курьером назначен  -  {courier.FullName}, {courier.PhoneNumber}, {courier.Address}");
+            Console.WriteLine($"ID - {courier.id} / Курьером назначен  -  {courier.FullName}, {courier.PhoneNumber}, {courier.Address}");
         }
     }
 }

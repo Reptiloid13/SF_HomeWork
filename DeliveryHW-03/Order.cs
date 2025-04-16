@@ -39,10 +39,10 @@ namespace DeliveryHW_03
         }
         public void ShowProducts()
         {
-            Console.WriteLine($"Заказ - {id}");
+            Console.WriteLine($"Заказ  номер - {id}");
             foreach (var product in Products)
             {
-                Console.WriteLine($"{product.Key} {product.Value} шт.");
+                Console.WriteLine($"{product.Key.Name}, {product.Value} шт.");
             }
         }
     }
