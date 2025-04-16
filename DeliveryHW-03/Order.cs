@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace DeliveryHW_03
 {
@@ -21,8 +22,28 @@ namespace DeliveryHW_03
 
         public void DisplayAddress()
         {
-            Console.WriteLine(Delivery.Address);
+            Console.WriteLine($"Адрес доставки - {Delivery.Address}");
         }
 
+        public Order(TDelivery delivery)
+        {
+            Delivery = delivery;
+            Products = new Dictionary<Product, int>();
+        }
+        public void AddProduct(Product product, int quantity)
+        {
+            if (Products.ContainsKey(product))
+                Products[product] += quantity;
+            else
+                Products.Add(product, quantity);
+        }
+        public void ShowProducts()
+        {
+            Console.WriteLine($"Заказ - {id}");
+            foreach (var product in Products)
+            {
+                Console.WriteLine($"{product.Key} {product.Value} шт.");
+            }
+        }
     }
 }

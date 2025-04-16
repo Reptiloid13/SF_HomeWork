@@ -10,7 +10,7 @@ namespace DeliveryHW_03
     {
         public string City { get; set; }
         public string Street { get; set; }
-        public int HouseNumber { get; set; }
+        public string HouseNumber { get; set; }
 
         public override string ToString()
         {
@@ -19,4 +19,5 @@ namespace DeliveryHW_03
 
 
     }
+
 }

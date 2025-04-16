@@ -14,8 +14,8 @@ namespace DeliveryHW_03
         private Guid _id => Guid.NewGuid();
         public Guid Id;
 
-        private List<string> _name = new List<string>();
-        public List<string> Name
+        private string _name;
+        public string Name
         {
             get
             {
@@ -23,13 +23,12 @@ namespace DeliveryHW_03
             }
             set
             {
-                foreach (var item in value) // Почему здесь используем цикл, а в Персоне не использовали.
+
+                if (!Regex.IsMatch(value, @"^[a-zA-Z]+$"))
                 {
-                    if (!Regex.IsMatch(item, @"^[a-zA-Z]+$"))
-                    {
-                        throw new ArgumentException("Должны быть только буквы");
-                    }
+                    throw new ArgumentException("Должны быть только буквы");
                 }
+
                 _name = value;
 
             }

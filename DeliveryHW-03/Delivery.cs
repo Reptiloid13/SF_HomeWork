@@ -30,8 +30,15 @@ namespace DeliveryHW_03
         }
     }
 
-    public class ShopDelivery : Delivery(string address)
+    public class ShopDelivery : Delivery
     {
 
+    }
+    public class CourierDelivery : Delivery
+    {
+        public CourierDelivery(string address)
+        {
+            Address = address;
+        }
     }
 }
