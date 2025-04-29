@@ -6,7 +6,7 @@ public class Program
     {
         ILogger logger = new Logger();
 
-        Calculator calculator = new Calculator(logger); // здесь показывает ошибку - почему? 
+        Calculator calculator = new Calculator(logger);
         try
         {
             logger.Event("Начало работы калькулятора");
