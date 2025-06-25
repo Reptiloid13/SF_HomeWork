@@ -4,6 +4,7 @@ using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TBotDZ.Services;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -24,9 +25,22 @@ public class InlineKeyboardController
 
     public async Task Handle(CallbackQuery? callbackQuery, CancellationToken ct)
     {
-        Console.WriteLine($"Controller {GetType().Name} detected the button press");
 
-        await _telegramClient.SendMessage(callbackQuery.From.Id, "Detected press button press", cancellationToken: ct);
+        if (callbackQuery?.Data == null)
+            return;
+
+        _memoryStorage.GetSession(callbackQuery.From.Id).TextCode = callbackQuery.Data;
+
+        string textCode = callbackQuery.Data switch
+        {
+            "Text length" => "Calculate text length",
+            "Sum" => "Calculate sum of digits",
+            _ => String.Empty
+        };
+
+
+        await _telegramClient.SendMessage(callbackQuery.From.Id, $"<b> You choose - {textCode}. {Environment.NewLine}</b>" + $"{Environment.NewLine} You can change in the main menu.", cancellationToken: ct, parseMode: ParseMode.Html);
+
     }
 
 }

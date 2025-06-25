@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TBotDZ.Controllers;
+using TBotDZ.Services;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -13,34 +14,36 @@ using Telegram.Bot.Types.Enums;
 
 namespace TBotDZ;
 
-public class Bot:BackgroundService
+public class Bot : BackgroundService
 {
     private ITelegramBotClient _telegramClient;
 
     private InlineKeyboardController _inlineKeyboardController;
     private TextMessageController _textMessageController;
     private DefaultMessageController _defaultMessageController;
+    private IFileHandler _fileHandler;
 
-    public Bot(ITelegramBotClient telegramClient, TextMessageController textMessageController,InlineKeyboardController inlineKeyboardController, DefaultMessageController defaultMessageController)
+    public Bot(ITelegramBotClient telegramClient, TextMessageController textMessageController, InlineKeyboardController inlineKeyboardController, DefaultMessageController defaultMessageController, IFileHandler fileHandler)
     {
         _telegramClient = telegramClient;
         _textMessageController = textMessageController;
         _inlineKeyboardController = inlineKeyboardController;
         _defaultMessageController = defaultMessageController;
+        _fileHandler = fileHandler;
     }
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        _telegramClient.StartReceiving(HandleUpdateAsync,HandleErrorAsync, new ReceiverOptions() { AllowedUpdates = { } }, cancellationToken:stoppingToken);
+        _telegramClient.StartReceiving(HandleUpdateAsync, HandleErrorAsync, new ReceiverOptions() { AllowedUpdates = { } }, cancellationToken: stoppingToken);
 
         Console.WriteLine("Bot started ");
     }
 
     public async Task HandleUpdateAsync(ITelegramBotClient botClietnt, Update update, CancellationToken cancellationToken)
     {
-      // Обрабатываем нажатие на кнопки из Telegram Bot 
-      if(update.Type == UpdateType.CallbackQuery)
+        // Обрабатываем нажатие на кнопки из Telegram Bot 
+        if (update.Type == UpdateType.CallbackQuery)
         {
-           await _inlineKeyboardController.Handle(update.CallbackQuery, cancellationToken);
+            await _inlineKeyboardController.Handle(update.CallbackQuery, cancellationToken);
             return;
         }
 
@@ -51,12 +54,12 @@ public class Bot:BackgroundService
                 case MessageType.Text:
                     await _textMessageController.Handle(update.Message, cancellationToken);
                     return;
-                    default: //unsupported message
+                default: //unsupported message
 
                     await _defaultMessageController.Handle(update.Message, cancellationToken);
                     return;
             }
-          
+
         }
 
 
