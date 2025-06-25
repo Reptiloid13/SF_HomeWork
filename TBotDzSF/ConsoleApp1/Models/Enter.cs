@@ -17,7 +17,7 @@ public class Enter
                 await telegramBotClient.SendMessage(id, "Enter the text message: ", cancellationToken: ct);
                 break;
             case Datas.Sum:
-                await telegramBotClient.SendMessage(id, "Endte didgit: ", cancellationToken: ct);
+                await telegramBotClient.SendMessage(id, "Enter digits: ", cancellationToken: ct);
                 break;
             default:
                 await telegramBotClient.SendMessage(id, "", cancellationToken: ct);

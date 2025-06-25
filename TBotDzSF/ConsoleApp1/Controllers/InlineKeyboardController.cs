@@ -4,6 +4,7 @@ using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TBotDZ.Models;
 using TBotDZ.Services;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -31,15 +32,17 @@ public class InlineKeyboardController
 
         _memoryStorage.GetSession(callbackQuery.From.Id).TextCode = callbackQuery.Data;
 
-        string textCode = callbackQuery.Data switch
+        string code = callbackQuery.Data switch
         {
-            "Text length" => "Calculate text length",
-            "Sum" => "Calculate sum of digits",
+            Datas.TextLength => "Calculate text length",
+            Datas.Sum => "Calculate sum of digits",
             _ => String.Empty
         };
 
 
-        await _telegramClient.SendMessage(callbackQuery.From.Id, $"<b> You choose - {textCode}. {Environment.NewLine}</b>" + $"{Environment.NewLine} You can change in the main menu.", cancellationToken: ct, parseMode: ParseMode.Html);
+        await _telegramClient.SendMessage(callbackQuery.From.Id, $"<b> You choose - {code}. {Environment.NewLine}</b>" + $"{Environment.NewLine} You can change in the main menu.", cancellationToken: ct, parseMode: ParseMode.Html);
+
+        await Enter.SendInstruction(_telegramClient, callbackQuery.From.Id, _memoryStorage.GetSession(callbackQuery.From.Id), ct);
 
     }
 
